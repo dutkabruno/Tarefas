@@ -32,6 +32,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Mim</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#conquistas">Conquistas</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
                 </ul>
             </div>
@@ -39,43 +40,80 @@
     </nav>
 
     <!-- Sobre Mim -->
-    <section id="sobre" class="py-5 mt-5">
-        <div class="container text-center text-white">
-            <img src="imagens/paisagem.jpeg" class="img-fluid" style="max-width: 225px;">
-            <h2>Sobre Mim</h2>
-            <p>Meu nome é Bruno Davi Dutka, nasci em Joinville-SC, tenho 18 anos e estou cursando técnico em desenvolvedor de sistemas no Senai, gosto de desafios e problemas que envolvam lógica</p>
+    <section id="sobre" class="py-5 px-4 mt-5">
+        <div class="container-fluid text-center row align-items-center">
+            <div>
+                <img src="imagens/eu.jpeg" class="img-fluid" style="max-width: 450px">
+            </div>
+            <div>
+                <div class="text-white fw-bolder"><h2>Sobre Mim</h2></div>
+                <div class="text-light"><p>Meu nome é Bruno Davi Dutka, nasci em Joinville-SC,<br> tenho 18 anos e estou cursando Técnico em Desenvolvimento de Sistemas no Senai,<br> gosto de desafios e problemas que envolvam lógica</p></div>    
+            </div>
         </div>
     </section>
 
     <!-- Projetos -->
-    <section id="projetos" class="py-5 bg-dark text-white">
+    <section id="projetos" class="py-5 text-white" style="background-color: rgb(83, 82, 80);">
         <div class="container text-center">
             <h2>Meu Projeto</h2>
             <div class="row mt-4">
                 <div class="col-md-4">
-                    <div class="card project-card">
+                    <div class="card project-card" style="border: 3px solid rgb(56, 56, 46);">
                         <img src="imagens/programação.jpg" class="img-fluid" >
-                        <div class="card-body">
-                            <h5 class="card-title text-dark">Começo</h5>
+                        <div class="card-body text-white" style="background-color: rgb(56, 56, 46);">
+                            <h5 class="card-title">Começo</h5>
                             <p class="card-text">Finalizar o meu curso para trabalhar na área de programação</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card project-card">
+                    <div class="card project-card" style="border: 3px solid rgb(56, 56, 46);">
                         <img src="imagens/exterior.jpg" class="img-fluid" >
-                        <div class="card-body">
-                            <h5 class="card-title text-dark">Meio</h5>
+                        <div class="card-body text-white" style="background-color: rgb(56, 56, 46);">
+                            <h5 class="card-title">Meio</h5>
                             <p class="card-text">Conseguir um trabalho no exterior, para receber em dolar, ou euro</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card project-card">
+                    <div class="card project-card" style="border: 3px solid rgb(56, 56, 46);">
                         <img src="imagens/carro.webp" class="img-fluid">
-                        <div class="card-body">
-                            <h5 class="card-title text-dark">Fim</h5>
+                        <div class="card-body text-white" style="background-color: rgb(56, 56, 46);">
+                            <h5 class="card-title">Fim</h5>
                             <p class="card-text">Ter liberdade financeira, para poder viagar e comprar um carro legal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Conquistas-->
+    <section id="conquistas" class="py-5 text-white" style="background-color:rgb(83, 82, 80)">
+        <div class="container text-center">
+            <h2>Conquistas</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card project-card" style="border: 3px solid rgb(56, 56, 46);">
+                        <img src="imagens/annes.jpg" class="img-fluid">
+                        <div class="card-body text-white" style="background-color:rgb(56, 56, 46);">
+                            <p class="card-text">Ensino médio completo na E.E.B Engenheiro Annes Gualberto</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card" style="border: 3px solid rgb(56, 56, 46);">
+                        <img src="imagens/knn.webp" class="img-fluid">
+                        <div class="card-body text-white" style="background-color:rgb(56, 56, 46);">
+                            <p class="card-text">Conclusão do curso de Inglês Básico pela KNN</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card" style="border: 3px solid rgb(56, 56, 46);">
+                        <img src="imagens/obmep.jpg" class="img-fluid">
+                        <div class="card-body text-white" style="background-color:rgb(56, 56, 46);">
+                            <p class="card-text">Medalhista de Bonze na OBMEP Municipal de 2023</p>
                         </div>
                     </div>
                 </div>
@@ -85,17 +123,24 @@
 
     <!-- Contato -->
     <section id="contato" class="py-5">
-        <div class="container text-center text-white">
+        <div class="containerfluid text-center text-white">
             <h2>Contato</h2>
-            <form class="mt-4 w-50 mx-auto">
-                <div class="mb-3">
+            <form class="mt-4 w-50 mx-auto row" id="contact-form">
+                <div class="col-md-6">
                     <input type="text" class="form-control" placeholder="Nome">
                 </div>
-                <div class="mb-3">
+                <div class="col-md-6">
                     <input type="email" class="form-control" placeholder="Email">
                 </div>
+            </form>
+            <form class="mt-4 w-50 mx-auto row" id="contact-form">
+                <div class="col-md-6">
+                    <input type="number" class="form-control" placeholder="Número">
+                </div>
+            </form>
+            <form class="mt-4 w-50 mx-auto" id="contact-form">
                 <div class="mb-3">
-                    <textarea class="form-control" rows="3" placeholder="Mensagem"></textarea>
+                    <textarea class="form-control" rows="3" placeholder="Digite sua dúvida"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
